@@ -1,0 +1,14 @@
+name: Demo Workflow with Email Step
+
+on:
+  workflow_dispatch: # manual trigger
+  schedule:
+    - cron: '0 0 * * *' # daily at midnight UTC
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 23f3003748@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
